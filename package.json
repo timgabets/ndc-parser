@@ -1,6 +1,6 @@
 {
   "name": "ndc-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NDC ATM message parser",
   "main": "parser.js",
   "scripts": {
