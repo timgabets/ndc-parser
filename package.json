@@ -6,7 +6,7 @@
   "scripts": {
     "test": "istanbul cover jasmine"
   },
-  "repository": "https://github.com/timgabets/atm-states",
+  "repository": "https://github.com/timgabets/ndc-parser",
   "keywords": [
     "ATM",
     "NDC",
