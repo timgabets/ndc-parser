@@ -1,10 +1,10 @@
 {
   "name": "ndc-parser",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NDC ATM message parser",
   "main": "parser.js",
   "scripts": {
-    "test": "eslint *.js && istanbul cover jasmine"
+    "test": "eslint *.js && jasmine"
   },
   "repository": "https://github.com/timgabets/ndc-parser",
   "keywords": [
