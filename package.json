@@ -4,7 +4,7 @@
   "description": "NDC ATM message parser",
   "main": "parser.js",
   "scripts": {
-    "test": "istanbul cover jasmine"
+    "test": "eslint *.js && istanbul cover jasmine"
   },
   "repository": "https://github.com/timgabets/ndc-parser",
   "keywords": [
@@ -20,7 +20,8 @@
   "license": "LGPL-2.1",
   "devDependencies": {
     "istanbul": "^0.4.5",
-    "jasmine": "^2.8.0"
+    "jasmine": "^2.8.0",
+    "eslint": "^4.12.0"
   },
   "dependencies": {
   }
