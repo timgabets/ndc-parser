@@ -500,6 +500,36 @@ test('should parse EMV Configuration - ICC Transaction Data Objects table', t =>
   t.deepEqual(p.parse('80\x1c000\x1c\x1c2'), parsed);
 });
 
+test('should parse EMV Configuration - ICC Language Support table', t => {
+  let parsed = { 
+    message_class: 'EMV Configuration', 
+    LUNO: '000', 
+    message_sequence_number: '',
+    message_subclass: 'ICC Language Support table'
+  };
+  t.deepEqual(p.parse('80\x1c000\x1c\x1c3'), parsed);
+});
+
+test('should parse EMV Configuration - ICC Terminal Data Objects table', t => {
+  let parsed = { 
+    message_class: 'EMV Configuration', 
+    LUNO: '000', 
+    message_sequence_number: '',
+    message_subclass: 'ICC Terminal Data Objects table'
+  };
+  t.deepEqual(p.parse('80\x1c000\x1c\x1c4'), parsed);
+});
+
+test('should parse EMV Configuration - ICC Terminal Acceptable AIDs table', t => {
+  let parsed = { 
+    message_class: 'EMV Configuration', 
+    LUNO: '000', 
+    message_sequence_number: '',
+    message_subclass: 'ICC Terminal Acceptable AIDs table'
+  };
+  t.deepEqual(p.parse('80\x1c000\x1c\x1c5'), parsed);
+});
+
 
 
 
