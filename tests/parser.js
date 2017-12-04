@@ -477,3 +477,12 @@ test('should parse printer flag 3', t => {
   t.deepEqual(p.getPrinterFlagDescription('3'), {'3': 'Print on receipt and journal printer'});
 });
 
+test('should parse EMV Configuration - ICC Currency Data Objects table message', t => {
+  let parsed = { 
+    message_class: 'EMV Configuration', 
+    LUNO: '000', 
+    message_sequence_number: '',
+    message_subclass: 'ICC Currency Data Objects table'
+  };
+  t.deepEqual(p.parse('80\x1c000\x1c\x1c1\x1c'), parsed);
+});
